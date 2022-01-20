@@ -2,7 +2,7 @@
 
 ## Sobre o Projeto
 
-Layout desenvolvido com base no [design](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U) proposto pelo site [Frontend Mentor](https://www.frontendmentor.io/home).
+Layout desenvolvido com base no [design](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj) proposto pelo site [Frontend Mentor](https://www.frontendmentor.io/home).
 
 ## Layout
 
@@ -39,7 +39,7 @@ Layout desenvolvido com base no [design](https://www.frontendmentor.io/challenge
 
 <ol>
     <li>Abra o terminal do Git no diretório onde ficará este projeto.</li>
-    <li>Entre com o comando <code>git clone 'https://github.com/riandeolivera/nft-preview-card-component'</code>.</li>
+    <li>Entre com o comando <code>git clone 'https://github.com/riandeolivera/order-summary-component'</code>.</li>
     <li>Instale as dependências necessárias usando <code>npm install</code>.</li>
     <li>Após a instalação, insira <code>npm start</code>.</li>
     <li>Entre na URL <a href="http://localhost:3000">http://localhost:3000</a> pela sua barra de navegação, é onde a aplicação estará rodando.</li>
