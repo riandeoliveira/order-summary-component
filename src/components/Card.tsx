@@ -16,6 +16,7 @@ import {
   Link,
   OptionsContainer,
   AcceptButton,
+  DeclineButtonContainer,
   DeclineButton,
 } from "../styles/Card";
 import musicListener from "../assets/images/music-listener.svg";
@@ -56,7 +57,9 @@ export const Card: React.FC = () => {
         </SubscriptionContainer>
         <OptionsContainer>
           <AcceptButton>{accept_button}</AcceptButton>
-          <DeclineButton>{decline_button}</DeclineButton>
+          <DeclineButtonContainer>
+            <DeclineButton>{decline_button}</DeclineButton>
+          </DeclineButtonContainer>
         </OptionsContainer>
       </MainArea>
     </CardContainer>
