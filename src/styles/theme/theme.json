@@ -1,0 +1,17 @@
+{
+  "colors": {
+    "bermuda_gray": "#7280a7",
+    "cloud_burst": "#1f2f56",
+    "cornflower_blue": "#766cf1",
+    "persian_blue": "#3829e0",
+    "portage": "#857bf360",
+    "white": "#ffffff",
+    "zircon": "#f5f7ff",
+    "zumthor": "#e0e8ff"
+  },
+  "fonts": {
+    "primary": "Red Hat Display",
+    "secondary": "sans-serif"
+  }
+}
+ 

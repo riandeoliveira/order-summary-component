@@ -1,9 +1,11 @@
 import styled from "styled-components";
+import theme from "./theme/theme.json";
+import device from "media-query-sizes";
 
 export const CardContainer = styled.div`
-  background-color: var(--white-color);
+  background-color: ${theme.colors.white};
   border-radius: 20px;
-  box-shadow: 0px 30px 30px var(--portage-color);
+  box-shadow: 0px 30px 30px ${theme.colors.portage};
   margin: 20px;
   max-width: 450px;
 `;
@@ -28,7 +30,7 @@ export const DescriptionContainer = styled.div`
 
 export const Title = styled.h1`
   animation: fade-in 1s, slide-in 1s;
-  color: var(--cloud-burst-color);
+  color: ${theme.colors.cloud_burst};
   font-size: 28px;
   font-weight: 900;
   margin-bottom: 20px;
@@ -36,7 +38,7 @@ export const Title = styled.h1`
 
 export const Description = styled.p`
   animation: fade-in 1s;
-  color: var(--bermuda-gray-color);
+  color: ${theme.colors.bermuda_gray};
   font-size: 17px;
   line-height: 1.7em;
   margin-bottom: 20px;
@@ -44,24 +46,24 @@ export const Description = styled.p`
 
 export const SubscriptionContainer = styled.div`
   align-items: center;
-  background-color: var(--zircon-color);
+  background-color: ${theme.colors.zircon};
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
   padding: 25px;
 
-  @media screen and (max-width: 420px) {
+  @media ${device.mobileL} {
     flex-direction: column;
+
+    & > div {
+      margin-bottom: 20px;
+    }
   }
 `;
 
 export const PlanContainer = styled.div`
   align-items: center;
   display: flex;
-
-  @media screen and (max-width: 420px) {
-    margin-bottom: 20px;
-  }
 `;
 
 export const MusicalNote = styled.img``;
@@ -75,12 +77,12 @@ export const PriceContainer = styled.div`
 `;
 
 export const Plan = styled.span`
-  color: var(--cloud-burst-color);
+  color: ${theme.colors.cloud_burst};
   font-weight: 900;
 `;
 
 export const Price = styled.span`
-  color: var(--bermuda-gray-color);
+  color: ${theme.colors.bermuda_gray};
 `;
 
 export const Link = styled.a`
@@ -89,7 +91,7 @@ export const Link = styled.a`
   transition: all 0.2s linear;
 
   &:hover {
-    color: var(--cornflower-blue-color);
+    color: ${theme.colors.cornflower_blue};
     text-decoration: none;
     transition: all 0.2s linear;
   }
@@ -104,10 +106,10 @@ export const OptionsContainer = styled.div`
 
 export const AcceptButton = styled.button`
   animation: increase 1s;
-  background-color: var(--persian-blue-color);
+  background-color: ${theme.colors.persian_blue};
   border-radius: 12px;
-  box-shadow: 1px 20px 20px var(--portage-color);
-  color: var(--white-color);
+  box-shadow: 1px 20px 20px ${theme.colors.portage};
+  color: ${theme.colors.white};
   cursor: pointer;
   font-size: 15px;
   font-weight: 700;
@@ -115,7 +117,7 @@ export const AcceptButton = styled.button`
   transition: all 0.2s linear;
 
   &:hover {
-    background-color: var(--cornflower-blue-color);
+    background-color: ${theme.colors.cornflower_blue};
     transition: all 0.2s linear;
   }
 `;
@@ -126,14 +128,14 @@ export const DeclineButtonContainer = styled.div`
 
 export const DeclineButton = styled.button`
   background-color: transparent;
-  color: var(--bermuda-gray-color);
+  color: ${theme.colors.bermuda_gray};
   cursor: pointer;
   font-size: 15px;
   font-weight: 900;
   transition: all 0.2s linear;
 
   &:hover {
-    color: var(--cloud-burst-color);
+    color: ${theme.colors.cloud_burst};
     transition: all 0.2s linear;
   }
 `;

@@ -1,42 +1,4 @@
 @charset "UTF-8";
 
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
-@import "./styles/animations/animations.css";
-
-* {
-  border: 0;
-  box-sizing: border-box;
-  font-family: var(--primary-font), var(--secondary-font);
-  list-style: none;
-  margin: 0;
-  outline: 0;
-  padding: 0;
-}
-
-:root {
-  --bermuda-gray-color: #7280a7;
-  --cloud-burst-color: #1f2f56;
-  --cornflower-blue-color: #766cf1;
-  --persian-blue-color: #3829e0;
-  --portage-color: #857bf360;
-  --white-color: #ffffff;
-  --zircon-color: #f5f7ff;
-  --zumthor-color: #e0e8ff;
-
-  --primary-font: "Red Hat Display";
-  --secondary-font: sans-serif;
-}
-
-html {
-  align-items: center;
-  display: flex;
-  height: 100%;
-  justify-content: center;
-}
-
-body {
-  background-color: var(--zumthor-color);
-  background-image: url("assets/images/waves.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
+@import "./styles/animations/keyframes.css";

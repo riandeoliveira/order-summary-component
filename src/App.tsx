@@ -1,5 +1,7 @@
-import { Card } from "./components/Card";
+import Card from "./components/Card";
 
-export const App: React.FC = () => {
+const App: React.FC = () => {
   return <Card />;
 };
+
+export default App;

@@ -1,4 +1,4 @@
-import data from "../data/data.json";
+import content from "../content/card.json";
 import {
   CardContainer,
   HeaderArea,
@@ -19,8 +19,7 @@ import {
   DeclineButtonContainer,
   DeclineButton,
 } from "../styles/Card";
-import musicListener from "../assets/images/music-listener.svg";
-import musicalNote from "../assets//icons/musical-note.svg";
+import { musicListener, musicalNote } from "../assets/media";
 
 const {
   music_listener_alt,
@@ -32,9 +31,9 @@ const {
   link,
   accept_button,
   decline_button,
-} = data;
+} = content;
 
-export const Card: React.FC = () => {
+const Card: React.FC = () => {
   return (
     <CardContainer>
       <HeaderArea>
@@ -65,3 +64,5 @@ export const Card: React.FC = () => {
     </CardContainer>
   );
 };
+
+export default Card;
