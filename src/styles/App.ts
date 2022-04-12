@@ -113,6 +113,10 @@ export const OptionsBox = styled.div`
     &:hover {
       background-color: ${theme.colors.cornflower_blue};
     }
+
+    @media ${device.tablet} {
+      animation: none;
+    }
   }
 
   div {
